@@ -37,5 +37,20 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contact->send();
+  $sent = $contact->send();
+
+  if ($sent) {
+    echo 'success';
+  } else {
+    echo 'error';
+  }
 ?>
+<script>
+  // JavaScript to display alert after successful submission
+  window.onload = function() {
+    var response = '<?php echo $sent; ?>';
+    if (response === 'success') {
+      alert('Message sent successfully!');
+    }
+  };
+</script>
