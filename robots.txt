@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sachin7332.github.io/portfolio/sitemap.xml
