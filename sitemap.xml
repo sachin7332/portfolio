@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://sachin7332.github.io/portfolio/</loc>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/my.jpeg</image:loc>
+      <image:title>Sachin Diwakar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/banner.jpg</image:loc>
+      <image:title>Sachin Diwakar at a mountain lake</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/work/nokia-black-box.png</image:loc>
+      <image:title>Nokia Bell Labs work by Sachin Diwakar</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://sachin7332.github.io/portfolio/passion.html</loc>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/life/chandratal.jpeg</image:loc>
+      <image:title>Sachin Diwakar at Chandratal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/life/mountain.png</image:loc>
+      <image:title>Sachin Diwakar in the mountains</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/life/jaishlmer.jpeg</image:loc>
+      <image:title>Sachin Diwakar in Jaisalmer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/life/star-gazzing.jpeg</image:loc>
+      <image:title>Sachin Diwakar star gazing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sachin7332.github.io/portfolio/assets/img/life/badmintion.jpeg</image:loc>
+      <image:title>Sachin Diwakar playing badminton</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://sachin7332.github.io/portfolio/assets/img/banner.jpg</video:thumbnail_loc>
+      <video:title>Sachin Diwakar at the lake</video:title>
+      <video:description>Sachin Diwakar at a mountain lake in the Himalayas.</video:description>
+      <video:content_loc>https://sachin7332.github.io/portfolio/assets/video/life/Lake.mp4</video:content_loc>
+      <video:publication_date>2026-10-21T17:34:00+05:30</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://sachin7332.github.io/portfolio/projects/waves.html</loc>
