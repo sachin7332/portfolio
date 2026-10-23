@@ -26,14 +26,16 @@
     });
   }
 
-  links.forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (!nav.classList.contains("is-open")) return;
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.textContent = "Menu";
-      root.style.overflow = "";
-    });
+  function closeMenu() {
+    if (!nav || !toggle) return;
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.textContent = "Menu";
+    root.style.overflow = "";
+  }
+
+  document.querySelectorAll(".nav-links a, .life-tab, .life-invite").forEach(function (link) {
+    link.addEventListener("click", closeMenu);
   });
 
   document.addEventListener("keydown", function (event) {
@@ -72,6 +74,23 @@
     nodes.forEach(function (el) { revealObserver.observe(el); });
   };
   watchReveal(document.querySelectorAll(".reveal"));
+
+  function restoreAfterBack() {
+    closeMenu();
+    document.querySelectorAll(".reveal").forEach(function (el) {
+      el.classList.add("is-in");
+      el.classList.remove("from-up");
+    });
+    document.querySelectorAll(".rise").forEach(function (el) {
+      el.style.animation = "none";
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    });
+  }
+
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) restoreAfterBack();
+  });
 
   var sections = Array.prototype.map.call(links, function (link) {
     return document.querySelector(link.getAttribute("href"));
