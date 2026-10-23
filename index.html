@@ -66,12 +66,15 @@
 
   <header class="nav">
     <a class="brand" href="#top">Sachin Diwakar</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <div class="nav-actions">
+      <a class="life-tab" href="passion.html">Life</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    </div>
     <nav id="nav-menu" class="nav-links" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#earlier">Earlier</a>
       <a href="#experience">Experience</a>
-      <a href="passion.html">Life</a>
+      <a class="nav-life" href="passion.html">Life<span>Travel, photos and films</span></a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -88,6 +91,13 @@
             <a class="button button-primary" href="#work">View selected work</a>
             <a class="button button-secondary" href="#contact">Get in touch</a>
           </div>
+          <a class="life-invite" href="passion.html">
+            <span>
+              <span class="life-invite-kicker">My life</span>
+              <strong>See travel, photos and films</strong>
+            </span>
+            <span class="life-invite-go" aria-hidden="true">→</span>
+          </a>
           <ul class="facts rise d5">
             <li><strong>6 years</strong><span>building software</span></li>
             <li><strong>Jodhpur</strong><span>India</span></li>

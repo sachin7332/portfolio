@@ -153,6 +153,70 @@ a {
   color: var(--ink);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.life-tab,
+.life-invite {
+  display: none;
+}
+
+.life-invite {
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #1d1d1f;
+  color: #fff;
+  text-decoration: none;
+}
+
+.life-invite-kicker {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.life-invite strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.life-invite-go {
+  font-size: 22px;
+}
+
+.nav-links a.nav-life {
+  padding: 7px 12px;
+  border-radius: 980px;
+  background: #1d1d1f;
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.nav-links a.nav-life span {
+  display: none;
+}
+
+.nav-links a.nav-life:hover,
+.nav-links a.nav-life[aria-current="page"] {
+  background: #000;
+  color: #fff;
+}
+
 .nav-toggle {
   display: none;
   border: 0;
@@ -896,6 +960,27 @@ h1 {
     padding: 0 20px;
   }
 
+  .life-invite {
+    display: flex;
+  }
+
+  .life-tab {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 980px;
+    background: #1d1d1f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .life-tab[aria-current="page"] {
+    box-shadow: inset 0 0 0 2px #fff, 0 0 0 2px #1d1d1f;
+  }
+
   .nav-toggle {
     display: inline-flex;
   }
@@ -929,6 +1014,27 @@ h1 {
     font-weight: 600;
     opacity: 1;
     padding: 6px 0;
+  }
+
+  .nav-links a.nav-life {
+    order: -1;
+    width: 100%;
+    margin: 0 0 18px;
+    padding: 18px 18px 16px;
+    border-radius: 20px;
+    background: #1d1d1f;
+    color: #fff;
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .nav-links a.nav-life span {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.78);
   }
 
   .wrap {
